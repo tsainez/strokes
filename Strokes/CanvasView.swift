@@ -32,7 +32,7 @@ class CanvasView: UIView {
         self.clipsToBounds = true // cannot draw over the edges
         self.isMultipleTouchEnabled = false // only recognize one touch
         
-        lineColor = UIColor.white
+        lineColor = UIColor.black
         lineWidth = 3.5 // small width for drawing characters
     }
     
