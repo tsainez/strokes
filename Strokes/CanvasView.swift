@@ -33,7 +33,7 @@ class CanvasView: UIView {
         self.isMultipleTouchEnabled = false // only recognize one touch
         
         lineColor = UIColor.black
-        lineWidth = 3.5 // small width for drawing characters
+        lineWidth = 1.5 // small width for drawing characters
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
