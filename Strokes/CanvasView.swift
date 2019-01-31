@@ -10,14 +10,15 @@
 import UIKit
 
 class CanvasView: UIView {
-
+    
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
     override func draw(_ rect: CGRect) {
         // Drawing code
     }
-    */
+     */
+ 
     
     var lineColor:UIColor!
     var lineWidth:CGFloat!
@@ -33,13 +34,13 @@ class CanvasView: UIView {
         self.isMultipleTouchEnabled = false // only recognize one touch
         
         lineColor = UIColor.black
-        lineWidth = 1.5 // small width for drawing characters
+        lineWidth = 2
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touch = touches.first
         startingPoint = touch?.location(in: self) // canvas view is a view
-
+        
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -70,5 +71,5 @@ class CanvasView: UIView {
         self.layer.sublayers = nil
         self.setNeedsDisplay()
     }
-
+    
 }

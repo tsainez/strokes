@@ -38,6 +38,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB337258220371CA001009FE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB9B22172125EC8C00BB61FF /* AppDelegate.swift */,
+				CB9B22202125EC8D00BB61FF /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		CB9B220B2125EC8C00BB61FF = {
 			isa = PBXGroup;
 			children = (
@@ -58,12 +67,11 @@
 		CB9B22162125EC8C00BB61FF /* Strokes */ = {
 			isa = PBXGroup;
 			children = (
-				CB9B22172125EC8C00BB61FF /* AppDelegate.swift */,
+				CB337258220371CA001009FE /* Supporting Files */,
 				CB9B22192125EC8C00BB61FF /* ViewController.swift */,
 				CB06E87C2134B09300A556F1 /* CanvasView.swift */,
 				CB9B221B2125EC8C00BB61FF /* Main.storyboard */,
 				CB9B221E2125EC8D00BB61FF /* Assets.xcassets */,
-				CB9B22202125EC8D00BB61FF /* LaunchScreen.storyboard */,
 				CB9B22232125EC8D00BB61FF /* Info.plist */,
 			);
 			path = Strokes;
@@ -291,11 +299,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U3HDXSVPJM;
 				INFOPLIST_FILE = Strokes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = tsainez;
+				PRODUCT_BUNDLE_IDENTIFIER = tsainez.Strokes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
@@ -311,11 +320,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U3HDXSVPJM;
 				INFOPLIST_FILE = Strokes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = tsainez;
+				PRODUCT_BUNDLE_IDENTIFIER = tsainez.Strokes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
