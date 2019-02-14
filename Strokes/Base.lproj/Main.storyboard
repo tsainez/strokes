@@ -31,7 +31,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="EzX-QS-MrA"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Canvas" id="kqO-ai-DzY"/>
+                    <tabBarItem key="tabBarItem" title="Canvas" image="pencil" id="kqO-ai-DzY"/>
                     <connections>
                         <outlet property="webView" destination="8Kc-IX-9Eq" id="znu-qT-pph"/>
                     </connections>
@@ -50,7 +50,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="ky2-3J-HqP"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Info" id="qiN-2h-sT6"/>
+                    <tabBarItem key="tabBarItem" title="Info" image="info" id="qiN-2h-sT6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fWg-01-QuD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -85,11 +85,16 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="sHv-l8-Ofr"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Search" id="7QA-rr-ZaY"/>
+                    <tabBarItem key="tabBarItem" title="Search" image="search" id="7QA-rr-ZaY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qs0-Nq-coh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1265" y="-164"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="info" width="30" height="30"/>
+        <image name="pencil" width="30" height="30"/>
+        <image name="search" width="30" height="30"/>
+    </resources>
 </document>
