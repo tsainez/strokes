@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CB06E87D2134B09300A556F1 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB06E87C2134B09300A556F1 /* CanvasView.swift */; };
+		CB50566D2214DDAF00EC4EF0 /* CanvasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50566C2214DDAF00EC4EF0 /* CanvasController.swift */; };
 		CB9B22182125EC8C00BB61FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9B22172125EC8C00BB61FF /* AppDelegate.swift */; };
 		CB9B221A2125EC8C00BB61FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9B22192125EC8C00BB61FF /* ViewController.swift */; };
 		CB9B221D2125EC8C00BB61FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB9B221B2125EC8C00BB61FF /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		CB06E87C2134B09300A556F1 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
+		CB50566C2214DDAF00EC4EF0 /* CanvasController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasController.swift; sourceTree = "<group>"; };
 		CB9B22142125EC8C00BB61FF /* Strokes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Strokes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB9B22172125EC8C00BB61FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB9B22192125EC8C00BB61FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +45,7 @@
 			children = (
 				CB9B22172125EC8C00BB61FF /* AppDelegate.swift */,
 				CB9B22202125EC8D00BB61FF /* LaunchScreen.storyboard */,
+				CB06E87C2134B09300A556F1 /* CanvasView.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -69,8 +72,8 @@
 			children = (
 				CB337258220371CA001009FE /* Supporting Files */,
 				CB9B22192125EC8C00BB61FF /* ViewController.swift */,
-				CB06E87C2134B09300A556F1 /* CanvasView.swift */,
 				CB9B221B2125EC8C00BB61FF /* Main.storyboard */,
+				CB50566C2214DDAF00EC4EF0 /* CanvasController.swift */,
 				CB9B221E2125EC8D00BB61FF /* Assets.xcassets */,
 				CB9B22232125EC8D00BB61FF /* Info.plist */,
 			);
@@ -150,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB9B221A2125EC8C00BB61FF /* ViewController.swift in Sources */,
+				CB50566D2214DDAF00EC4EF0 /* CanvasController.swift in Sources */,
 				CB06E87D2134B09300A556F1 /* CanvasView.swift in Sources */,
 				CB9B22182125EC8C00BB61FF /* AppDelegate.swift in Sources */,
 			);

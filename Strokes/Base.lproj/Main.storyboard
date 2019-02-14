@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wfX-x8-7jl">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,48 +10,86 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Canvas-->
+        <scene sceneID="cHT-Ac-qGh">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Strokes" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="JLw-Av-oP2" customClass="CanvasController" customModule="Strokes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KdU-nJ-bHQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="00f-MC-3jE" customClass="CanvasView" customModule="Strokes" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="20" width="375" height="577"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ypy-RF-FcR">
-                                <rect key="frame" x="160" y="614" width="55" height="33"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Clear">
-                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="clearCanvas:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LuY-25-3yc"/>
-                                </connections>
-                            </button>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Kc-IX-9Eq">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431372549019" green="0.38823529411764707" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="00f-MC-3jE" secondAttribute="bottom" constant="70" id="5Ai-zv-kkg"/>
-                            <constraint firstItem="00f-MC-3jE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LMl-4A-va7"/>
-                            <constraint firstItem="00f-MC-3jE" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="N2f-38-RRa"/>
-                            <constraint firstItem="00f-MC-3jE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="WqN-qE-3Om"/>
-                            <constraint firstItem="Ypy-RF-FcR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="160" id="d70-Vn-Z7E"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ypy-RF-FcR" secondAttribute="bottom" constant="20" id="jiv-qH-gik"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ypy-RF-FcR" secondAttribute="trailing" constant="160" id="xlL-wA-552"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="EzX-QS-MrA"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Canvas" id="kqO-ai-DzY"/>
                     <connections>
-                        <outlet property="canvasView" destination="00f-MC-3jE" id="a5B-FV-klC"/>
+                        <outlet property="webView" destination="8Kc-IX-9Eq" id="znu-qT-pph"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="USA-AI-stx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="131.78410794602701"/>
+            <point key="canvasLocation" x="45.600000000000001" y="374.66266866566718"/>
+        </scene>
+        <!--Info-->
+        <scene sceneID="CrI-OB-B6U">
+            <objects>
+                <viewController id="TTR-cS-wgD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e6p-BG-E2W">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ky2-3J-HqP"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Info" id="qiN-2h-sT6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fWg-01-QuD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1265" y="-985"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="c9y-kZ-4aD">
+            <objects>
+                <tabBarController id="wfX-x8-7jl" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NvJ-4c-OBh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="JLw-Av-oP2" kind="relationship" relationship="viewControllers" id="hgJ-X8-WAD"/>
+                        <segue destination="Edm-jI-rgd" kind="relationship" relationship="viewControllers" id="962-5E-5mF"/>
+                        <segue destination="TTR-cS-wgD" kind="relationship" relationship="viewControllers" id="b5P-9b-U5t"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gRF-ZN-Rm0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47" y="-618"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="YZm-Mz-rS0">
+            <objects>
+                <viewController id="Edm-jI-rgd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lks-hh-44i">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="sHv-l8-Ofr"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Search" id="7QA-rr-ZaY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qs0-Nq-coh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1265" y="-164"/>
         </scene>
     </scenes>
 </document>

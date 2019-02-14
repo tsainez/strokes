@@ -6,6 +6,7 @@
 //  Adapted from Brian Advent's repository on GitHub
 //  Copyright © 2018 Anthony Sainez. All rights reserved.
 //
+/// DEPRECIATED SINCE 2/13/2019
 
 import UIKit
 
@@ -19,6 +20,7 @@ class CanvasView: UIView {
     }
      */
  
+    // @TODO Utilize https://github.com/haawa799/KanjiBezierPaths
     
     var lineColor:UIColor!
     var lineWidth:CGFloat!
