@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     
     /*
      
-    /// DEPRECIATED
+    /// DEPRECATED
     @IBAction func clearCanvas(_ sender: Any) {
         canvasView.clearCanvas()
     }
