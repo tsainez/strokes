@@ -3,10 +3,8 @@
 //  Strokes
 //
 //  Created by Anthony Sainez on 2/13/19.
-//  Copyright © 2019 com.example. All rights reserved.
+//  Copyright © 2019 Anthony Sainez. All rights reserved.
 //
-
-// @TODO: Make this work
 
 import UIKit
 import WebKit
@@ -19,7 +17,36 @@ class CanvasController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        let url = URL(string: <#T##String#>)
+        
+        /*
+        let contentController = WKUserContentController()
+        let scriptSource = "put injection here"
+        let script = WKUserScript(source: scriptSource, injectionTime: .atDocumentEnd, forMainFrameOnly: true)
+        contentController.addUserScript(script)
+        
+        let config = WKWebViewConfiguration()
+        config.userContentController = contentController
+        */
+
+        // Initializing a basic WKWebView object
+        let webView = WKWebView(frame: .zero) // add ", configuration: config" for injection
+        
+        view.addSubview(webView)
+        
+        let layoutGuide = view.safeAreaLayoutGuide
+        
+        webView.translatesAutoresizingMaskIntoConstraints = false
+        webView.leadingAnchor.constraint(equalTo: layoutGuide.leadingAnchor).isActive = true
+        webView.trailingAnchor.constraint(equalTo: layoutGuide.trailingAnchor).isActive = true
+        webView.topAnchor.constraint(equalTo: layoutGuide.topAnchor).isActive = true
+        webView.bottomAnchor.constraint(equalTo: layoutGuide.bottomAnchor).isActive = true
+        
+        // loading an html file from local resources
+        if let url = Bundle.main.url(forResource: "index", withExtension: "html") {
+            webView.loadFileURL(url, allowingReadAccessTo: url.deletingLastPathComponent())
+            // deletingLastPathComponent() allows WebKit to read from directory of index.html
+        }
+        
     }
     
 
