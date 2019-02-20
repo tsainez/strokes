@@ -7,17 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CB06E87D2134B09300A556F1 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB06E87C2134B09300A556F1 /* CanvasView.swift */; };
 		CB50566D2214DDAF00EC4EF0 /* CanvasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50566C2214DDAF00EC4EF0 /* CanvasController.swift */; };
 		CB9B22182125EC8C00BB61FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9B22172125EC8C00BB61FF /* AppDelegate.swift */; };
 		CB9B221A2125EC8C00BB61FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9B22192125EC8C00BB61FF /* ViewController.swift */; };
 		CB9B221D2125EC8C00BB61FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB9B221B2125EC8C00BB61FF /* Main.storyboard */; };
 		CB9B221F2125EC8D00BB61FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB9B221E2125EC8D00BB61FF /* Assets.xcassets */; };
 		CB9B22222125EC8D00BB61FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB9B22202125EC8D00BB61FF /* LaunchScreen.storyboard */; };
+		CBBEEFCB221DE3CF0029ECDE /* demo.js in Resources */ = {isa = PBXBuildFile; fileRef = CBBEEFCA221DE3CF0029ECDE /* demo.js */; };
+		CBBEEFCD221DE7A10029ECDE /* hanzi-writer.min.js in Resources */ = {isa = PBXBuildFile; fileRef = CBBEEFCC221DE7A10029ECDE /* hanzi-writer.min.js */; };
+		CBBF2A06221C81F5008B6216 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = CBBF2A05221C81F5008B6216 /* index.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CB06E87C2134B09300A556F1 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
 		CB50566C2214DDAF00EC4EF0 /* CanvasController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasController.swift; sourceTree = "<group>"; };
 		CB9B22142125EC8C00BB61FF /* Strokes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Strokes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB9B22172125EC8C00BB61FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -27,6 +28,9 @@
 		CB9B22212125EC8D00BB61FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB9B22232125EC8D00BB61FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB9B222B2125F18100BB61FF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CBBEEFCA221DE3CF0029ECDE /* demo.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = demo.js; sourceTree = "<group>"; };
+		CBBEEFCC221DE7A10029ECDE /* hanzi-writer.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "hanzi-writer.min.js"; sourceTree = "<group>"; };
+		CBBF2A05221C81F5008B6216 /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,9 +47,9 @@
 		CB337258220371CA001009FE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CBBEEFCC221DE7A10029ECDE /* hanzi-writer.min.js */,
 				CB9B22172125EC8C00BB61FF /* AppDelegate.swift */,
 				CB9B22202125EC8D00BB61FF /* LaunchScreen.storyboard */,
-				CB06E87C2134B09300A556F1 /* CanvasView.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -71,10 +75,12 @@
 			isa = PBXGroup;
 			children = (
 				CB337258220371CA001009FE /* Supporting Files */,
-				CB9B22192125EC8C00BB61FF /* ViewController.swift */,
-				CB9B221B2125EC8C00BB61FF /* Main.storyboard */,
-				CB50566C2214DDAF00EC4EF0 /* CanvasController.swift */,
 				CB9B221E2125EC8D00BB61FF /* Assets.xcassets */,
+				CB9B22192125EC8C00BB61FF /* ViewController.swift */,
+				CB50566C2214DDAF00EC4EF0 /* CanvasController.swift */,
+				CB9B221B2125EC8C00BB61FF /* Main.storyboard */,
+				CBBEEFCA221DE3CF0029ECDE /* demo.js */,
+				CBBF2A05221C81F5008B6216 /* index.html */,
 				CB9B22232125EC8D00BB61FF /* Info.plist */,
 			);
 			path = Strokes;
@@ -139,8 +145,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBBF2A06221C81F5008B6216 /* index.html in Resources */,
 				CB9B22222125EC8D00BB61FF /* LaunchScreen.storyboard in Resources */,
+				CBBEEFCD221DE7A10029ECDE /* hanzi-writer.min.js in Resources */,
 				CB9B221F2125EC8D00BB61FF /* Assets.xcassets in Resources */,
+				CBBEEFCB221DE3CF0029ECDE /* demo.js in Resources */,
 				CB9B221D2125EC8C00BB61FF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -154,7 +163,6 @@
 			files = (
 				CB9B221A2125EC8C00BB61FF /* ViewController.swift in Sources */,
 				CB50566D2214DDAF00EC4EF0 /* CanvasController.swift in Sources */,
-				CB06E87D2134B09300A556F1 /* CanvasView.swift in Sources */,
 				CB9B22182125EC8C00BB61FF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
