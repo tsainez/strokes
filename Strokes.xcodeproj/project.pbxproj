@@ -16,6 +16,7 @@
 		CBBEEFCB221DE3CF0029ECDE /* demo.js in Resources */ = {isa = PBXBuildFile; fileRef = CBBEEFCA221DE3CF0029ECDE /* demo.js */; };
 		CBBEEFCD221DE7A10029ECDE /* hanzi-writer.min.js in Resources */ = {isa = PBXBuildFile; fileRef = CBBEEFCC221DE7A10029ECDE /* hanzi-writer.min.js */; };
 		CBBF2A06221C81F5008B6216 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = CBBF2A05221C81F5008B6216 /* index.html */; };
+		CBE2FA4022209DE200C7E9C9 /* jquery.min.js in Resources */ = {isa = PBXBuildFile; fileRef = CBE2FA3F22209DE200C7E9C9 /* jquery.min.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		CBBEEFCA221DE3CF0029ECDE /* demo.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = demo.js; sourceTree = "<group>"; };
 		CBBEEFCC221DE7A10029ECDE /* hanzi-writer.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "hanzi-writer.min.js"; sourceTree = "<group>"; };
 		CBBF2A05221C81F5008B6216 /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		CBE2FA3F22209DE200C7E9C9 /* jquery.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jquery.min.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,14 +46,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CB337258220371CA001009FE /* Supporting Files */ = {
+		CB337258220371CA001009FE /* web */ = {
 			isa = PBXGroup;
 			children = (
 				CBBEEFCC221DE7A10029ECDE /* hanzi-writer.min.js */,
-				CB9B22172125EC8C00BB61FF /* AppDelegate.swift */,
-				CB9B22202125EC8D00BB61FF /* LaunchScreen.storyboard */,
+				CBE2FA3F22209DE200C7E9C9 /* jquery.min.js */,
+				CBBEEFCA221DE3CF0029ECDE /* demo.js */,
+				CBBF2A05221C81F5008B6216 /* index.html */,
 			);
-			path = "Supporting Files";
+			path = web;
 			sourceTree = "<group>";
 		};
 		CB9B220B2125EC8C00BB61FF = {
@@ -74,13 +77,13 @@
 		CB9B22162125EC8C00BB61FF /* Strokes */ = {
 			isa = PBXGroup;
 			children = (
-				CB337258220371CA001009FE /* Supporting Files */,
+				CB337258220371CA001009FE /* web */,
 				CB9B221E2125EC8D00BB61FF /* Assets.xcassets */,
-				CB9B22192125EC8C00BB61FF /* ViewController.swift */,
 				CB50566C2214DDAF00EC4EF0 /* CanvasController.swift */,
+				CB9B22192125EC8C00BB61FF /* ViewController.swift */,
+				CB9B22172125EC8C00BB61FF /* AppDelegate.swift */,
 				CB9B221B2125EC8C00BB61FF /* Main.storyboard */,
-				CBBEEFCA221DE3CF0029ECDE /* demo.js */,
-				CBBF2A05221C81F5008B6216 /* index.html */,
+				CB9B22202125EC8D00BB61FF /* LaunchScreen.storyboard */,
 				CB9B22232125EC8D00BB61FF /* Info.plist */,
 			);
 			path = Strokes;
@@ -147,6 +150,7 @@
 			files = (
 				CBBF2A06221C81F5008B6216 /* index.html in Resources */,
 				CB9B22222125EC8D00BB61FF /* LaunchScreen.storyboard in Resources */,
+				CBE2FA4022209DE200C7E9C9 /* jquery.min.js in Resources */,
 				CBBEEFCD221DE7A10029ECDE /* hanzi-writer.min.js in Resources */,
 				CB9B221F2125EC8D00BB61FF /* Assets.xcassets in Resources */,
 				CBBEEFCB221DE3CF0029ECDE /* demo.js in Resources */,

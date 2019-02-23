@@ -1,9 +1,3 @@
-/*
---- ADAPTED FROM HANZI WRITER DEMO.JS
---- THIS IS NOT MY ORIGINAL WORK.
---- THIS IS A WORK IN PROGRESS.
-*/
-
 var animationWriter;
 var quizWriter;
 var character;

@@ -7,8 +7,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- <meta charset="utf-8"> -->
+            <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
                 <meta name="viewport" content="width=device-width, initial-scale=1">
                     
                     <title>Strokes</title>
@@ -38,7 +38,7 @@
                         
                         <!-- Connecting the html to the database. -->
                         <!-- TODO: Make this work locally -->
-                        <script type="application/javascript" src="https://cdn.jsdelivr.net/npm/hanzi-writer@1.3/dist/hanzi-writer.min.js"></script>
+                        <script type="application/javascript" src="hanzi-writer.min.js"></script>
                         </head>
     <body>
         
@@ -71,9 +71,10 @@
         </div>
          -->
         
-        <!-- TODO: Remove all but quiz functionality --> 
+        <!-- TODO: Remove all but quiz functionality -->
         <div class="demo container">
-            <h1>Hanzi Writer Demos</h1>
+            
+            <!--<h1>Hanzi Writer Demos</h1>-->
             <form class="form-inline char-select-form js-char-form">
                 <div class="form-group">
                     <label for="character-select">
@@ -86,7 +87,7 @@
             
             <hr class="demo-divider" />
             
-            <h4>Character Animation</h4>
+            <!-- <h4>Character Animation</h4> -->
             <div class="demo-target" id="animation-target"></div>
             <div class="demo-controls">
                 <form class="form-inline">
@@ -102,8 +103,8 @@
             
             <hr class="demo-divider" />
             
-            <h4>Stroke Quiz</h4>
-            <p>Quiz yourself by drawing the character <strong class="char-symbol"></strong> below with your mouse or finger</p>
+            <!-- <h4>Stroke Quiz</h4> -->
+            <!-- <p>Quiz yourself by drawing the character <strong class="char-symbol"></strong> below with your mouse or finger</p> -->
             
             <div class="demo-target" id="quiz-target"></div>
             <div class="demo-controls">
@@ -121,6 +122,7 @@
         
         <hr class="featurette-divider footer-featurette-divider" />
         
+        <!--
         <div class="container">
             <footer>
                 <p class="pull-right"><a href="#">Back to top</a></p>
@@ -131,9 +133,10 @@
                 </p>
             </footer>
         </div>
+         -->
         
-        <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <script src="jquery.min.js"></script>
+        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script> -->
         
         
         <script type="application/javascript" src="demo.js"></script>
