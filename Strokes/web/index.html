@@ -1,9 +1,3 @@
-<!--
- --- ADAPTED FROM HANZI WRITER DEMO.HTML
- --- THIS IS NOT MY ORIGINAL WORK.
- --- THIS IS A WORK IN PROGRESS.
- -->
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -39,6 +33,7 @@
                         <!-- Connecting the html to the database. -->
                         <!-- TODO: Make this work locally -->
                         <script type="application/javascript" src="hanzi-writer.min.js"></script>
+                        
                         </head>
     <body>
         
@@ -75,20 +70,26 @@
         <div class="demo container">
             
             <!--<h1>Hanzi Writer Demos</h1>-->
+            
+            
             <form class="form-inline char-select-form js-char-form">
                 <div class="form-group">
                     <label for="character-select">
                         Character
                     </label>
                     <input type="text" class="form-control character-select" id="character-select" size="1" maxlength="1" value="水" />
+                    <!-- default val sui --> 
                 </div>
                 <button type="submit" class="btn btn-default">Update demos</button>
             </form>
             
-            <hr class="demo-divider" />
+            
+            <!-- <hr class="demo-divider" /> -->
             
             <!-- <h4>Character Animation</h4> -->
-            <div class="demo-target" id="animation-target"></div>
+            
+            <div class="demo-target" id="animation-target"></div> <!-- DEPENDENCY -->
+            <!--
             <div class="demo-controls">
                 <form class="form-inline">
                     <div class="checkbox">
@@ -99,9 +100,10 @@
                     </div>
                 </form>
             </div>
-            <a href="docs.html#animation-link" class="demo-docs-link">Learn more about animation</a>
+             -->
+            <!-- <a href="docs.html#animation-link" class="demo-docs-link">Learn more about animation</a> -->
             
-            <hr class="demo-divider" />
+            <!-- <hr class="demo-divider" /> -->
             
             <!-- <h4>Stroke Quiz</h4> -->
             <!-- <p>Quiz yourself by drawing the character <strong class="char-symbol"></strong> below with your mouse or finger</p> -->
@@ -117,10 +119,10 @@
                     </div>
                 </form>
             </div>
-            <a href="docs.html#quizzing-link" class="demo-docs-link">Learn more about quizzes</a>
+            <!-- <a href="docs.html#quizzing-link" class="demo-docs-link">Learn more about quizzes</a> -->
         </div>
         
-        <hr class="featurette-divider footer-featurette-divider" />
+        <!-- <hr class="featurette-divider footer-featurette-divider" /> -->
         
         <!--
         <div class="container">
@@ -138,11 +140,8 @@
         <script src="jquery.min.js"></script>
         <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script> -->
         
-        
         <script type="application/javascript" src="demo.js"></script>
-        
-        
-        
+
     </body>
     
 </html>
