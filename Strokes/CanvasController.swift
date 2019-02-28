@@ -12,10 +12,13 @@ import WebKit
 class CanvasController: UIViewController {
 
     @IBOutlet weak var webView: WKWebView!
+    @IBOutlet weak var searchBar: UISearchBar!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // based on https://medium.com/capital-one-tech/javascript-manipulation-on-ios-using-webkit-2b1115e7e405
+        
         // Do any additional setup after loading the view.
         
         /*
@@ -29,8 +32,9 @@ class CanvasController: UIViewController {
         */
 
         // Initializing a basic WKWebView object
-        let webView = WKWebView(frame: .zero) // add ", configuration: config" for injection
+        // let webView = WKWebView(frame: .zero)
         
+        /*
         view.addSubview(webView)
         
         let layoutGuide = view.safeAreaLayoutGuide
@@ -40,6 +44,7 @@ class CanvasController: UIViewController {
         webView.trailingAnchor.constraint(equalTo: layoutGuide.trailingAnchor).isActive = true
         webView.topAnchor.constraint(equalTo: layoutGuide.topAnchor).isActive = true
         webView.bottomAnchor.constraint(equalTo: layoutGuide.bottomAnchor).isActive = true
+        */
         
         // loading an html file from local resources
         if let url = Bundle.main.url(forResource: "index", withExtension: "html") {

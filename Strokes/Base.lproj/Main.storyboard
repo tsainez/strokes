@@ -18,48 +18,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Kc-IX-9Eq">
-                                <rect key="frame" x="0.0" y="44" width="375" height="685"/>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Kc-IX-9Eq">
+                                <rect key="frame" x="0.0" y="100" width="375" height="629"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431372549019" green="0.38823529411764707" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
+                            <searchBar contentMode="redraw" fixedFrame="YES" searchBarStyle="minimal" placeholder="Search for a character" translatesAutoresizingMaskIntoConstraints="NO" id="bh0-4r-M4W">
+                                <rect key="frame" x="0.0" y="44" width="375" height="56"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="8Kc-IX-9Eq" firstAttribute="top" secondItem="EzX-QS-MrA" secondAttribute="top" id="5y9-eC-Peb"/>
-                            <constraint firstItem="8Kc-IX-9Eq" firstAttribute="leading" secondItem="EzX-QS-MrA" secondAttribute="leading" id="C3j-bg-Xso"/>
-                            <constraint firstItem="8Kc-IX-9Eq" firstAttribute="trailing" secondItem="EzX-QS-MrA" secondAttribute="trailing" id="WZf-ml-5sC"/>
-                            <constraint firstItem="8Kc-IX-9Eq" firstAttribute="bottom" secondItem="EzX-QS-MrA" secondAttribute="bottom" id="mPs-nr-2U5"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="EzX-QS-MrA"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Canvas" image="pencil" id="kqO-ai-DzY"/>
                     <connections>
+                        <outlet property="searchBar" destination="bh0-4r-M4W" id="kor-te-jRC"/>
                         <outlet property="webView" destination="8Kc-IX-9Eq" id="znu-qT-pph"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="USA-AI-stx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="45.600000000000001" y="374.66266866566718"/>
-        </scene>
-        <!--Info-->
-        <scene sceneID="CrI-OB-B6U">
-            <objects>
-                <viewController id="TTR-cS-wgD" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="e6p-BG-E2W">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="ky2-3J-HqP"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Info" image="info" id="qiN-2h-sT6"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fWg-01-QuD" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1168.8" y="-1053.6945812807883"/>
+            <point key="canvasLocation" x="45.600000000000001" y="374.6305418719212"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="c9y-kZ-4aD">
@@ -73,7 +62,6 @@
                     <connections>
                         <segue destination="JLw-Av-oP2" kind="relationship" relationship="viewControllers" id="hgJ-X8-WAD"/>
                         <segue destination="Edm-jI-rgd" kind="relationship" relationship="viewControllers" id="962-5E-5mF"/>
-                        <segue destination="TTR-cS-wgD" kind="relationship" relationship="viewControllers" id="b5P-9b-U5t"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gRF-ZN-Rm0" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -83,6 +71,7 @@
         <!--Search-->
         <scene sceneID="YZm-Mz-rS0">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qs0-Nq-coh" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="Edm-jI-rgd" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lks-hh-44i">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
@@ -92,13 +81,11 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Search" image="search" id="7QA-rr-ZaY"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qs0-Nq-coh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1264.8" y="-164.03940886699507"/>
         </scene>
     </scenes>
     <resources>
-        <image name="info" width="30" height="30"/>
         <image name="pencil" width="30" height="30"/>
         <image name="search" width="30" height="30"/>
     </resources>
