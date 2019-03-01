@@ -14,7 +14,7 @@ import WebKit
 class CanvasController: UIViewController {
 
     @IBOutlet weak var webView: WKWebView!
-    @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var searchBar: UISearchBar! // TODO: TODO: Have JavaScript and JQuery communicate with Swift to provide the character.
     
     override func viewDidLoad() {
         super.viewDidLoad()
