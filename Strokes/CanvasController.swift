@@ -9,6 +9,8 @@
 import UIKit
 import WebKit
 
+
+// TODO: Implement WKUIDelegate.
 class CanvasController: UIViewController {
 
     @IBOutlet weak var webView: WKWebView!
@@ -16,35 +18,7 @@ class CanvasController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // based on https://medium.com/capital-one-tech/javascript-manipulation-on-ios-using-webkit-2b1115e7e405
-        
         // Do any additional setup after loading the view.
-        
-        /*
-        let contentController = WKUserContentController()
-        let scriptSource = "put injection here"
-        let script = WKUserScript(source: scriptSource, injectionTime: .atDocumentEnd, forMainFrameOnly: true)
-        contentController.addUserScript(script)
-        
-        let config = WKWebViewConfiguration()
-        config.userContentController = contentController
-        */
-
-        // Initializing a basic WKWebView object
-        // let webView = WKWebView(frame: .zero)
-        
-        /*
-        view.addSubview(webView)
-        
-        let layoutGuide = view.safeAreaLayoutGuide
-        
-        webView.translatesAutoresizingMaskIntoConstraints = false
-        webView.leadingAnchor.constraint(equalTo: layoutGuide.leadingAnchor).isActive = true
-        webView.trailingAnchor.constraint(equalTo: layoutGuide.trailingAnchor).isActive = true
-        webView.topAnchor.constraint(equalTo: layoutGuide.topAnchor).isActive = true
-        webView.bottomAnchor.constraint(equalTo: layoutGuide.bottomAnchor).isActive = true
-        */
         
         // loading an html file from local resources
         if let url = Bundle.main.url(forResource: "index", withExtension: "html") {

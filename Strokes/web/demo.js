@@ -4,8 +4,7 @@ var character;
 var isCharVisible;
 var isOutlineVisible;
 
-// animator deprecated
-
+// TODO: Have JavaScript and JQuery communicate with Swift to provide the character.
 function updateCharacter() {
     $('#animation-target').html('');
     $('#quiz-target').html('');
@@ -72,4 +71,3 @@ $(function() {
                              quizWriter[method]();
                              });
   });
-

@@ -1,9 +1,7 @@
+/* TODO: Shrink this. */
 .demo-target {
     background: white;
     clear: both;
-    /*
-    border: 1px solid #AAA;
-    */
     width: 300px;
     height: 300px;
     margin: 0 auto
@@ -149,4 +147,3 @@
 .license-block {
     margin: 50px 0
 }
-
