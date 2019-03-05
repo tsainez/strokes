@@ -10,7 +10,6 @@
 		CB40DF6D22285F2C0030F776 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = CB40DF6C22285F2C0030F776 /* style.css */; };
 		CB50566D2214DDAF00EC4EF0 /* CanvasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50566C2214DDAF00EC4EF0 /* CanvasController.swift */; };
 		CB9B22182125EC8C00BB61FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9B22172125EC8C00BB61FF /* AppDelegate.swift */; };
-		CB9B221A2125EC8C00BB61FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9B22192125EC8C00BB61FF /* ViewController.swift */; };
 		CB9B221D2125EC8C00BB61FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB9B221B2125EC8C00BB61FF /* Main.storyboard */; };
 		CB9B221F2125EC8D00BB61FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB9B221E2125EC8D00BB61FF /* Assets.xcassets */; };
 		CB9B22222125EC8D00BB61FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB9B22202125EC8D00BB61FF /* LaunchScreen.storyboard */; };
@@ -25,7 +24,6 @@
 		CB50566C2214DDAF00EC4EF0 /* CanvasController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasController.swift; sourceTree = "<group>"; };
 		CB9B22142125EC8C00BB61FF /* Strokes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Strokes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB9B22172125EC8C00BB61FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CB9B22192125EC8C00BB61FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CB9B221C2125EC8C00BB61FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB9B221E2125EC8D00BB61FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB9B22212125EC8D00BB61FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -83,7 +81,6 @@
 				CB337258220371CA001009FE /* web */,
 				CB9B221E2125EC8D00BB61FF /* Assets.xcassets */,
 				CB50566C2214DDAF00EC4EF0 /* CanvasController.swift */,
-				CB9B22192125EC8C00BB61FF /* ViewController.swift */,
 				CB9B22172125EC8C00BB61FF /* AppDelegate.swift */,
 				CB9B221B2125EC8C00BB61FF /* Main.storyboard */,
 				CB9B22202125EC8D00BB61FF /* LaunchScreen.storyboard */,
@@ -169,7 +166,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB9B221A2125EC8C00BB61FF /* ViewController.swift in Sources */,
 				CB50566D2214DDAF00EC4EF0 /* CanvasController.swift in Sources */,
 				CB9B22182125EC8C00BB61FF /* AppDelegate.swift in Sources */,
 			);
