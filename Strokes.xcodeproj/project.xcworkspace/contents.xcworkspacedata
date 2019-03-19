@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Strokes.xcodeproj">
+      location = "group:/Users/tsainez/Developer/Strokes/Strokes/Classes">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>
