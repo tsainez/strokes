@@ -9,12 +9,12 @@
 import UIKit
 import WebKit
 
-
 // TODO: Implement WKUIDelegate.
-class CanvasController: UIViewController {
-
+class CanvasController: UIViewController, UISearchBarDelegate {
+    
     @IBOutlet weak var webView: WKWebView!
-    @IBOutlet weak var searchBar: UISearchBar! // TODO: TODO: Have JavaScript and JQuery communicate with Swift to provide the character.
+    @IBOutlet weak var searchBar: UISearchBar!
+    // TODO: Have JavaScript and JQuery communicate with Swift to provide the character.
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,17 +26,21 @@ class CanvasController: UIViewController {
             // deletingLastPathComponent() allows WebKit to read from directory of index.html
         }
         
+        /*
+         // MARK: - Navigation
+         
+         // In a storyboard-based application, you will often want to do a little preparation before navigation
+         override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            // Get the new view controller using segue.destination.
+            // Pass the selected object to the new view controller.
+         }
+         */
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+        
+        let character = searchBar.text
     }
-    */
-
 }

@@ -20,7 +20,7 @@
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Kc-IX-9Eq">
                                 <rect key="frame" x="0.0" y="100" width="375" height="629"/>
-                                <color key="backgroundColor" red="0.36078431372549019" green="0.38823529411764707" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
@@ -33,15 +33,18 @@
                                     <string>Title</string>
                                     <string>Title</string>
                                 </scopeButtonTitles>
+                                <connections>
+                                    <outlet property="delegate" destination="JLw-Av-oP2" id="Wid-eH-Kva"/>
+                                </connections>
                             </searchBar>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oA3-en-7OY">
                                 <rect key="frame" x="0.0" y="729" width="375" height="49"/>
                                 <items>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="QuM-5z-TpD"/>
-                                    <barButtonItem title="Show Outline" id="w7c-OA-hii"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="MuF-sJ-hzt"/>
+                                    <barButtonItem title="Toggle Outline" id="0ml-bV-lDs"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="wv6-qg-LY3"/>
-                                    <barButtonItem systemItem="refresh" id="HYW-Zp-Lle"/>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="keI-z3-4H8"/>
+                                    <barButtonItem title="Refresh" id="r7f-If-i8H"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="dyF-K8-XzW"/>
                                 </items>
                             </toolbar>
                         </subviews>
@@ -64,7 +67,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Canvas" image="pencil" id="kqO-ai-DzY"/>
                     <connections>
-                        <outlet property="searchBar" destination="bh0-4r-M4W" id="kor-te-jRC"/>
+                        <outlet property="searchBar" destination="bh0-4r-M4W" id="CW4-km-XI8"/>
                         <outlet property="webView" destination="8Kc-IX-9Eq" id="znu-qT-pph"/>
                     </connections>
                 </viewController>
