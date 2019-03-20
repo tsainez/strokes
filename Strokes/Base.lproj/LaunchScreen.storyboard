@@ -34,19 +34,7 @@
                             </toolbar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1wr-xA-bMo">
                                 <rect key="frame" x="0.0" y="76" width="375" height="547"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="loading" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="14x-Kz-3A0">
-                                        <rect key="frame" x="140" y="255.5" width="95" height="36"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="14x-Kz-3A0" firstAttribute="centerX" secondItem="1wr-xA-bMo" secondAttribute="centerX" id="qBy-1O-mm0"/>
-                                    <constraint firstItem="14x-Kz-3A0" firstAttribute="centerY" secondItem="1wr-xA-bMo" secondAttribute="centerY" id="seE-a1-NBZ"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
