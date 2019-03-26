@@ -41,27 +41,35 @@
                                 <rect key="frame" x="0.0" y="729" width="375" height="49"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="MuF-sJ-hzt"/>
-                                    <barButtonItem title="Toggle Outline" id="0ml-bV-lDs"/>
+                                    <barButtonItem title="Outline" id="0ml-bV-lDs">
+                                        <connections>
+                                            <action selector="toggleOutline:" destination="JLw-Av-oP2" id="ZKm-O8-Spx"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="wv6-qg-LY3"/>
-                                    <barButtonItem title="Refresh" id="r7f-If-i8H"/>
+                                    <barButtonItem title="Reset" id="r7f-If-i8H">
+                                        <connections>
+                                            <action selector="resetQuiz:" destination="JLw-Av-oP2" id="9gl-NP-6c0"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="dyF-K8-XzW"/>
                                 </items>
                             </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="bh0-4r-M4W" firstAttribute="trailing" secondItem="EzX-QS-MrA" secondAttribute="trailing" id="84J-QD-X9d"/>
-                            <constraint firstItem="oA3-en-7OY" firstAttribute="bottom" secondItem="EzX-QS-MrA" secondAttribute="bottom" id="9IF-II-DUb"/>
-                            <constraint firstItem="oA3-en-7OY" firstAttribute="top" secondItem="8Kc-IX-9Eq" secondAttribute="bottom" id="IeE-Cv-7us"/>
-                            <constraint firstItem="oA3-en-7OY" firstAttribute="trailing" secondItem="EzX-QS-MrA" secondAttribute="trailing" id="KNh-1x-yeG"/>
-                            <constraint firstItem="oA3-en-7OY" firstAttribute="top" secondItem="8Kc-IX-9Eq" secondAttribute="bottom" id="Ldg-Uw-dIp"/>
-                            <constraint firstItem="bh0-4r-M4W" firstAttribute="top" secondItem="EzX-QS-MrA" secondAttribute="top" id="V0h-iC-T4w"/>
-                            <constraint firstItem="oA3-en-7OY" firstAttribute="leading" secondItem="EzX-QS-MrA" secondAttribute="leading" id="bmD-pu-Wvv"/>
-                            <constraint firstItem="8Kc-IX-9Eq" firstAttribute="trailing" secondItem="EzX-QS-MrA" secondAttribute="trailing" id="jW3-4W-FgS"/>
-                            <constraint firstItem="8Kc-IX-9Eq" firstAttribute="top" secondItem="bh0-4r-M4W" secondAttribute="bottom" id="sLj-8I-dKy"/>
-                            <constraint firstItem="8Kc-IX-9Eq" firstAttribute="leading" secondItem="EzX-QS-MrA" secondAttribute="leading" id="sZ1-Bl-KhZ"/>
-                            <constraint firstItem="8Kc-IX-9Eq" firstAttribute="top" secondItem="bh0-4r-M4W" secondAttribute="bottom" id="tHf-ob-fov"/>
-                            <constraint firstItem="bh0-4r-M4W" firstAttribute="leading" secondItem="EzX-QS-MrA" secondAttribute="leading" id="vcV-nf-6TD"/>
+                            <constraint firstItem="oA3-en-7OY" firstAttribute="trailing" secondItem="EzX-QS-MrA" secondAttribute="trailing" id="6Fn-CE-qxD"/>
+                            <constraint firstItem="bh0-4r-M4W" firstAttribute="trailing" secondItem="EzX-QS-MrA" secondAttribute="trailing" id="CRr-eI-mMo"/>
+                            <constraint firstItem="oA3-en-7OY" firstAttribute="bottom" secondItem="EzX-QS-MrA" secondAttribute="bottom" id="O4f-iN-uc5"/>
+                            <constraint firstItem="8Kc-IX-9Eq" firstAttribute="leading" secondItem="EzX-QS-MrA" secondAttribute="leading" id="OhN-eE-agy"/>
+                            <constraint firstItem="oA3-en-7OY" firstAttribute="top" secondItem="8Kc-IX-9Eq" secondAttribute="bottom" id="XF5-wX-2Ol"/>
+                            <constraint firstItem="8Kc-IX-9Eq" firstAttribute="top" secondItem="bh0-4r-M4W" secondAttribute="bottom" id="Ygt-Fm-8io"/>
+                            <constraint firstItem="oA3-en-7OY" firstAttribute="leading" secondItem="EzX-QS-MrA" secondAttribute="leading" id="jEQ-ft-ybm"/>
+                            <constraint firstItem="bh0-4r-M4W" firstAttribute="top" secondItem="EzX-QS-MrA" secondAttribute="top" id="jwX-jX-fRL"/>
+                            <constraint firstItem="8Kc-IX-9Eq" firstAttribute="top" secondItem="bh0-4r-M4W" secondAttribute="bottom" id="nJo-kM-fbi"/>
+                            <constraint firstItem="bh0-4r-M4W" firstAttribute="leading" secondItem="EzX-QS-MrA" secondAttribute="leading" id="t0a-7i-F70"/>
+                            <constraint firstItem="oA3-en-7OY" firstAttribute="top" secondItem="8Kc-IX-9Eq" secondAttribute="bottom" id="wdn-lI-WYC"/>
+                            <constraint firstItem="8Kc-IX-9Eq" firstAttribute="trailing" secondItem="EzX-QS-MrA" secondAttribute="trailing" id="x4m-Tr-fTT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="EzX-QS-MrA"/>
                     </view>
@@ -73,7 +81,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="USA-AI-stx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="45.600000000000001" y="374.6305418719212"/>
+            <point key="canvasLocation" x="-1746.4000000000001" y="-392.36453201970443"/>
         </scene>
     </scenes>
     <resources>

@@ -10,11 +10,10 @@ import UIKit
 import WebKit
 
 // TODO: Implement WKUIDelegate.
-class CanvasController: UIViewController, UISearchBarDelegate {
+class CanvasController: UIViewController, UISearchBarDelegate, WKScriptMessageHandler {
     
     @IBOutlet weak var webView: WKWebView!
-    @IBOutlet weak var searchBar: UISearchBar!
-    // TODO: Have JavaScript and JQuery communicate with Swift to provide the character.
+    @IBOutlet weak var searchBar: UISearchBar! // TODO: Have JavaScript and JQuery communicate with Swift to provide the character.
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,22 +24,47 @@ class CanvasController: UIViewController, UISearchBarDelegate {
             webView.loadFileURL(url, allowingReadAccessTo: url.deletingLastPathComponent())
             // deletingLastPathComponent() allows WebKit to read from directory of index.html
         }
-        
-        /*
-         // MARK: - Navigation
-         
-         // In a storyboard-based application, you will often want to do a little preparation before navigation
-         override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            // Get the new view controller using segue.destination.
-            // Pass the selected object to the new view controller.
-         }
-         */
-        
     }
     
+    public func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
+        print("Name: \(message.name)")
+        print("Body: \(message.body as! String)")
+    }
+    
+    // work in progress
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        searchBar.resignFirstResponder()
+        searchBar.resignFirstResponder() // hide keyboard
+        let sui = "水" // default character
         
-        let character = searchBar.text
+        webView.evaluateJavaScript("updateCharacter(\(searchBar.text ?? sui))") { (result, error) in
+            if error == nil {
+                // exit(0)
+                // success
+            }
+        }
+    }
+    
+    @IBAction func toggleOutline(_ sender: Any) {
+        // let method = "shouldShowOutline('quiz') ? 'showOutline' : 'hideOutline';"
+
+        webView.evaluateJavaScript("quizWriter.hideOutline();") { (result, error) in
+            if error == nil {
+                // exit(0)
+                // success
+            }
+        }
+
+    }
+    
+    
+    @IBAction func resetQuiz(_ sender: Any) {
+        webView.evaluateJavaScript("quizWriter.quiz();") { (result, error) in
+            if error == nil {
+                // exit(0)
+                // success
+            } else {
+                exit(1)
+            }
+        }
     }
 }

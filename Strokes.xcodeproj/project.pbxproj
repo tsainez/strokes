@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		CB40DF6D22285F2C0030F776 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = CB40DF6C22285F2C0030F776 /* style.css */; };
 		CB50566D2214DDAF00EC4EF0 /* CanvasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50566C2214DDAF00EC4EF0 /* CanvasController.swift */; };
+		CB811D422242C2C6001F270B /* demo.js in Resources */ = {isa = PBXBuildFile; fileRef = CB811D412242C2C6001F270B /* demo.js */; };
 		CB9B22182125EC8C00BB61FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9B22172125EC8C00BB61FF /* AppDelegate.swift */; };
 		CB9B221D2125EC8C00BB61FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB9B221B2125EC8C00BB61FF /* Main.storyboard */; };
 		CB9B221F2125EC8D00BB61FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB9B221E2125EC8D00BB61FF /* Assets.xcassets */; };
 		CB9B22222125EC8D00BB61FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB9B22202125EC8D00BB61FF /* LaunchScreen.storyboard */; };
-		CBBEEFCB221DE3CF0029ECDE /* demo.js in Resources */ = {isa = PBXBuildFile; fileRef = CBBEEFCA221DE3CF0029ECDE /* demo.js */; };
+		CBBEEFCB221DE3CF0029ECDE /* demo_init.js in Resources */ = {isa = PBXBuildFile; fileRef = CBBEEFCA221DE3CF0029ECDE /* demo_init.js */; };
 		CBBEEFCD221DE7A10029ECDE /* hanzi-writer.min.js in Resources */ = {isa = PBXBuildFile; fileRef = CBBEEFCC221DE7A10029ECDE /* hanzi-writer.min.js */; };
 		CBBF2A06221C81F5008B6216 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = CBBF2A05221C81F5008B6216 /* index.html */; };
 		CBE2FA4022209DE200C7E9C9 /* jquery.min.js in Resources */ = {isa = PBXBuildFile; fileRef = CBE2FA3F22209DE200C7E9C9 /* jquery.min.js */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		CB40DF6C22285F2C0030F776 /* style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
 		CB50566C2214DDAF00EC4EF0 /* CanvasController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasController.swift; sourceTree = "<group>"; };
+		CB811D412242C2C6001F270B /* demo.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = demo.js; sourceTree = "<group>"; };
 		CB9B22142125EC8C00BB61FF /* Strokes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Strokes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB9B22172125EC8C00BB61FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB9B221C2125EC8C00BB61FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -29,7 +31,7 @@
 		CB9B22212125EC8D00BB61FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB9B22232125EC8D00BB61FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB9B222B2125F18100BB61FF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		CBBEEFCA221DE3CF0029ECDE /* demo.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = demo.js; sourceTree = "<group>"; };
+		CBBEEFCA221DE3CF0029ECDE /* demo_init.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = demo_init.js; sourceTree = "<group>"; };
 		CBBEEFCC221DE7A10029ECDE /* hanzi-writer.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "hanzi-writer.min.js"; sourceTree = "<group>"; };
 		CBBF2A05221C81F5008B6216 /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		CBE2FA3F22209DE200C7E9C9 /* jquery.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jquery.min.js; sourceTree = "<group>"; };
@@ -51,7 +53,8 @@
 			children = (
 				CBBEEFCC221DE7A10029ECDE /* hanzi-writer.min.js */,
 				CBE2FA3F22209DE200C7E9C9 /* jquery.min.js */,
-				CBBEEFCA221DE3CF0029ECDE /* demo.js */,
+				CBBEEFCA221DE3CF0029ECDE /* demo_init.js */,
+				CB811D412242C2C6001F270B /* demo.js */,
 				CBBF2A05221C81F5008B6216 /* index.html */,
 				CB40DF6C22285F2C0030F776 /* style.css */,
 			);
@@ -151,10 +154,11 @@
 				CBBF2A06221C81F5008B6216 /* index.html in Resources */,
 				CB40DF6D22285F2C0030F776 /* style.css in Resources */,
 				CB9B22222125EC8D00BB61FF /* LaunchScreen.storyboard in Resources */,
+				CB811D422242C2C6001F270B /* demo.js in Resources */,
 				CBE2FA4022209DE200C7E9C9 /* jquery.min.js in Resources */,
 				CBBEEFCD221DE7A10029ECDE /* hanzi-writer.min.js in Resources */,
 				CB9B221F2125EC8D00BB61FF /* Assets.xcassets in Resources */,
-				CBBEEFCB221DE3CF0029ECDE /* demo.js in Resources */,
+				CBBEEFCB221DE3CF0029ECDE /* demo_init.js in Resources */,
 				CB9B221D2125EC8C00BB61FF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

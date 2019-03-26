@@ -1,28 +1,9 @@
+/// DEPRECATED
 //var animationWriter;
 var quizWriter;
 var character;
 var isCharVisible;
 var isOutlineVisible;
-
-
-/* note for the future:
-https://gist.github.com/TommiKivimaki/bc01b5c8b02e531276330d798bff5261
-https://learnappmaking.com/wkwebview-how-to/
-*/
-
-
-function sendOutlineStatus() {
-    var message = { "outlineStatus": quizWriter.showOutline }
-    window.webkit.messageHandlers[.messenger].postMessage(message)
-}
-
-/*
-window.setInterval(function(){
-
-                   window.webkit.messageHandlers.updateApplicationState.postMessage(JSON.stringify(window.applicationState))
-                   }, 10)
- */
-
 
 function updateCharacter() {
     $('#animation-target').html('');
@@ -38,7 +19,7 @@ function updateCharacter() {
                                          showOutline: shouldShowOutline('animation'),
                                          showCharacter: false
                                          });
-    */
+     */
     
     quizWriter = HanziWriter.create('quiz-target', character, {
                                     width: 300,
@@ -54,11 +35,9 @@ function updateCharacter() {
     window.quizWriter = quizWriter;
 }
 
-/*
 function shouldShowOutline(demoType) {
     return $('#' + demoType + '-show-outline').prop('checked');
 }
- */
 
 $(function() {
   updateCharacter();
@@ -73,25 +52,19 @@ $(function() {
                    animationWriter.animateCharacter();
                    });
   
-  /*
   $('#quiz-reset').on('click', function(evt) {
                       evt.preventDefault();
                       quizWriter.quiz();
                       });
+  /*
+   $('#animation-show-outline').on('click', function() {
+                               var method = shouldShowOutline('animation') ? 'showOutline' : 'hideOutline';
+                               animationWriter[method]();
+                               });
    */
   
-  /*
-  $('#animation-show-outline').on('click', function() {
-                                  var method = shouldShowOutline('animation') ? 'showOutline' : 'hideOutline';
-                                  animationWriter[method]();
-                                  });
-   */
-  
-  /*
   $('#quiz-show-outline').on('click', function() {
                              var method = shouldShowOutline('quiz') ? 'showOutline' : 'hideOutline';
                              quizWriter[method]();
                              });
-   */
-  
   });
