@@ -26,7 +26,7 @@
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="Naw-s8-918"/>
-                                    <barButtonItem enabled="NO" title="Toggle Outline" id="Q6O-xt-ir6"/>
+                                    <barButtonItem enabled="NO" title="Outline" id="Q6O-xt-ir6"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="77p-o6-IQL"/>
                                     <barButtonItem enabled="NO" title="Refresh" id="eLm-m4-iyi"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="KFW-l3-PjN"/>
