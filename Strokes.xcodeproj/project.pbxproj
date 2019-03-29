@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CB40DF6D22285F2C0030F776 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = CB40DF6C22285F2C0030F776 /* style.css */; };
 		CB50566D2214DDAF00EC4EF0 /* CanvasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50566C2214DDAF00EC4EF0 /* CanvasController.swift */; };
 		CB811D422242C2C6001F270B /* demo.js in Resources */ = {isa = PBXBuildFile; fileRef = CB811D412242C2C6001F270B /* demo.js */; };
 		CB9B22182125EC8C00BB61FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9B22172125EC8C00BB61FF /* AppDelegate.swift */; };
@@ -21,7 +20,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CB40DF6C22285F2C0030F776 /* style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
 		CB50566C2214DDAF00EC4EF0 /* CanvasController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasController.swift; sourceTree = "<group>"; };
 		CB811D412242C2C6001F270B /* demo.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = demo.js; sourceTree = "<group>"; };
 		CB9B22142125EC8C00BB61FF /* Strokes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Strokes.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,7 +54,6 @@
 				CBE2FA3F22209DE200C7E9C9 /* jquery.min.js */,
 				CB811D412242C2C6001F270B /* demo.js */,
 				CBBF2A05221C81F5008B6216 /* index.html */,
-				CB40DF6C22285F2C0030F776 /* style.css */,
 			);
 			path = web;
 			sourceTree = "<group>";
@@ -161,7 +158,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBBF2A06221C81F5008B6216 /* index.html in Resources */,
-				CB40DF6D22285F2C0030F776 /* style.css in Resources */,
 				CB9B22222125EC8D00BB61FF /* LaunchScreen.storyboard in Resources */,
 				CB811D422242C2C6001F270B /* demo.js in Resources */,
 				CBE2FA4022209DE200C7E9C9 /* jquery.min.js in Resources */,
@@ -256,7 +252,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -310,7 +306,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -327,7 +323,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U3HDXSVPJM;
 				INFOPLIST_FILE = Strokes/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -348,7 +344,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U3HDXSVPJM;
 				INFOPLIST_FILE = Strokes/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

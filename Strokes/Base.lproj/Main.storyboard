@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JLw-Av-oP2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JLw-Av-oP2">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Canvas-->
+        <!--Canvas Controller-->
         <scene sceneID="cHT-Ac-qGh">
             <objects>
                 <viewController id="JLw-Av-oP2" customClass="CanvasController" customModule="Strokes" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,14 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Kc-IX-9Eq">
-                                <rect key="frame" x="0.0" y="100" width="375" height="629"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <wkWebViewConfiguration key="configuration">
-                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
-                                </wkWebViewConfiguration>
-                            </wkWebView>
                             <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search for a character" translatesAutoresizingMaskIntoConstraints="NO" id="bh0-4r-M4W">
                                 <rect key="frame" x="0.0" y="44" width="375" height="56"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="search"/>
@@ -55,25 +47,32 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="dyF-K8-XzW"/>
                                 </items>
                             </toolbar>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Kc-IX-9Eq">
+                                <rect key="frame" x="37.666666666666657" y="261" width="300" height="300"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="05a-Si-krY"/>
+                                    <constraint firstAttribute="height" constant="300" id="QnE-IV-SY2"/>
+                                </constraints>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="8Kc-IX-9Eq" firstAttribute="centerY" secondItem="EzX-QS-MrA" secondAttribute="centerY" id="5Y4-LV-uLm"/>
                             <constraint firstItem="oA3-en-7OY" firstAttribute="trailing" secondItem="EzX-QS-MrA" secondAttribute="trailing" id="6Fn-CE-qxD"/>
                             <constraint firstItem="bh0-4r-M4W" firstAttribute="trailing" secondItem="EzX-QS-MrA" secondAttribute="trailing" id="CRr-eI-mMo"/>
                             <constraint firstItem="oA3-en-7OY" firstAttribute="bottom" secondItem="EzX-QS-MrA" secondAttribute="bottom" id="O4f-iN-uc5"/>
-                            <constraint firstItem="8Kc-IX-9Eq" firstAttribute="leading" secondItem="EzX-QS-MrA" secondAttribute="leading" id="OhN-eE-agy"/>
-                            <constraint firstItem="oA3-en-7OY" firstAttribute="top" secondItem="8Kc-IX-9Eq" secondAttribute="bottom" id="XF5-wX-2Ol"/>
-                            <constraint firstItem="8Kc-IX-9Eq" firstAttribute="top" secondItem="bh0-4r-M4W" secondAttribute="bottom" id="Ygt-Fm-8io"/>
                             <constraint firstItem="oA3-en-7OY" firstAttribute="leading" secondItem="EzX-QS-MrA" secondAttribute="leading" id="jEQ-ft-ybm"/>
                             <constraint firstItem="bh0-4r-M4W" firstAttribute="top" secondItem="EzX-QS-MrA" secondAttribute="top" id="jwX-jX-fRL"/>
-                            <constraint firstItem="8Kc-IX-9Eq" firstAttribute="top" secondItem="bh0-4r-M4W" secondAttribute="bottom" id="nJo-kM-fbi"/>
+                            <constraint firstItem="8Kc-IX-9Eq" firstAttribute="centerX" secondItem="EzX-QS-MrA" secondAttribute="centerX" id="s0U-37-7Hx"/>
                             <constraint firstItem="bh0-4r-M4W" firstAttribute="leading" secondItem="EzX-QS-MrA" secondAttribute="leading" id="t0a-7i-F70"/>
-                            <constraint firstItem="oA3-en-7OY" firstAttribute="top" secondItem="8Kc-IX-9Eq" secondAttribute="bottom" id="wdn-lI-WYC"/>
-                            <constraint firstItem="8Kc-IX-9Eq" firstAttribute="trailing" secondItem="EzX-QS-MrA" secondAttribute="trailing" id="x4m-Tr-fTT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="EzX-QS-MrA"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Canvas" image="pencil" id="kqO-ai-DzY"/>
                     <connections>
                         <outlet property="searchBar" destination="bh0-4r-M4W" id="CW4-km-XI8"/>
                         <outlet property="webView" destination="8Kc-IX-9Eq" id="znu-qT-pph"/>
@@ -84,7 +83,4 @@
             <point key="canvasLocation" x="-1746.4000000000001" y="-392.36453201970443"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="pencil" width="30" height="30"/>
-    </resources>
 </document>
