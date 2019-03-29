@@ -14,9 +14,9 @@
 		CB9B221D2125EC8C00BB61FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB9B221B2125EC8C00BB61FF /* Main.storyboard */; };
 		CB9B221F2125EC8D00BB61FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB9B221E2125EC8D00BB61FF /* Assets.xcassets */; };
 		CB9B22222125EC8D00BB61FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB9B22202125EC8D00BB61FF /* LaunchScreen.storyboard */; };
-		CBBEEFCB221DE3CF0029ECDE /* demo_init.js in Resources */ = {isa = PBXBuildFile; fileRef = CBBEEFCA221DE3CF0029ECDE /* demo_init.js */; };
 		CBBEEFCD221DE7A10029ECDE /* hanzi-writer.min.js in Resources */ = {isa = PBXBuildFile; fileRef = CBBEEFCC221DE7A10029ECDE /* hanzi-writer.min.js */; };
 		CBBF2A06221C81F5008B6216 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = CBBF2A05221C81F5008B6216 /* index.html */; };
+		CBCD869C224AD57000816568 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBCD869A224ACB5300816568 /* WebKit.framework */; };
 		CBE2FA4022209DE200C7E9C9 /* jquery.min.js in Resources */ = {isa = PBXBuildFile; fileRef = CBE2FA3F22209DE200C7E9C9 /* jquery.min.js */; };
 /* End PBXBuildFile section */
 
@@ -31,9 +31,9 @@
 		CB9B22212125EC8D00BB61FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB9B22232125EC8D00BB61FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB9B222B2125F18100BB61FF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		CBBEEFCA221DE3CF0029ECDE /* demo_init.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = demo_init.js; sourceTree = "<group>"; };
 		CBBEEFCC221DE7A10029ECDE /* hanzi-writer.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "hanzi-writer.min.js"; sourceTree = "<group>"; };
 		CBBF2A05221C81F5008B6216 /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		CBCD869A224ACB5300816568 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		CBE2FA3F22209DE200C7E9C9 /* jquery.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jquery.min.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -42,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBCD869C224AD57000816568 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,7 +54,6 @@
 			children = (
 				CBBEEFCC221DE7A10029ECDE /* hanzi-writer.min.js */,
 				CBE2FA3F22209DE200C7E9C9 /* jquery.min.js */,
-				CBBEEFCA221DE3CF0029ECDE /* demo_init.js */,
 				CB811D412242C2C6001F270B /* demo.js */,
 				CBBF2A05221C81F5008B6216 /* index.html */,
 				CB40DF6C22285F2C0030F776 /* style.css */,
@@ -67,6 +67,7 @@
 				CB9B222B2125F18100BB61FF /* README.md */,
 				CB9B22162125EC8C00BB61FF /* Strokes */,
 				CB9B22152125EC8C00BB61FF /* Products */,
+				CBCD8699224ACB5300816568 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +91,14 @@
 				CB9B22232125EC8D00BB61FF /* Info.plist */,
 			);
 			path = Strokes;
+			sourceTree = "<group>";
+		};
+		CBCD8699224ACB5300816568 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CBCD869A224ACB5300816568 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +133,7 @@
 				TargetAttributes = {
 					CB9B22132125EC8C00BB61FF = {
 						CreatedOnToolsVersion = 9.4.1;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -158,7 +167,6 @@
 				CBE2FA4022209DE200C7E9C9 /* jquery.min.js in Resources */,
 				CBBEEFCD221DE7A10029ECDE /* hanzi-writer.min.js in Resources */,
 				CB9B221F2125EC8D00BB61FF /* Assets.xcassets in Resources */,
-				CBBEEFCB221DE3CF0029ECDE /* demo_init.js in Resources */,
 				CB9B221D2125EC8C00BB61FF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,7 +335,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = tsainez.Strokes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -348,7 +356,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = tsainez.Strokes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

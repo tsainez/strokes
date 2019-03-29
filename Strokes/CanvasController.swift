@@ -10,7 +10,7 @@ import UIKit
 import WebKit
 
 // TODO: Implement WKUIDelegate.
-class CanvasController: UIViewController, UISearchBarDelegate, WKScriptMessageHandler {
+class CanvasController: UIViewController, UISearchBarDelegate {
     
     @IBOutlet weak var webView: WKWebView!
     @IBOutlet weak var searchBar: UISearchBar! // TODO: Have JavaScript and JQuery communicate with Swift to provide the character.
@@ -26,41 +26,44 @@ class CanvasController: UIViewController, UISearchBarDelegate, WKScriptMessageHa
         }
     }
     
-    public func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
-        print("Name: \(message.name)")
-        print("Body: \(message.body as! String)")
-    }
-    
-    // work in progress
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         searchBar.resignFirstResponder() // hide keyboard
         let sui = "水" // default character
         
-        webView.evaluateJavaScript("updateCharacter(\(searchBar.text ?? sui))") { (result, error) in
+        webView.evaluateJavaScript("changeCharacter('\(searchBar.text ?? sui)')") { (result, error) in
             if error == nil {
-                // exit(0)
                 // success
             }
         }
     }
     
+    // warning, here lies some very bad code
+    var outlineStatus = false
+    
     @IBAction func toggleOutline(_ sender: Any) {
-        // let method = "shouldShowOutline('quiz') ? 'showOutline' : 'hideOutline';"
-
-        webView.evaluateJavaScript("quizWriter.hideOutline();") { (result, error) in
-            if error == nil {
-                // exit(0)
-                // success
+        if outlineStatus == true {
+            webView.evaluateJavaScript("quizWriter.showOutline()") { (result, error) in
+                if error == nil {
+                    // success
+                }
             }
+            
+            outlineStatus = false
+        } else {
+            webView.evaluateJavaScript("quizWriter.hideOutline()") { (result, error) in
+                if error == nil {
+                    // success
+                }
+            }
+            
+            outlineStatus = true
         }
-
     }
     
     
     @IBAction func resetQuiz(_ sender: Any) {
         webView.evaluateJavaScript("quizWriter.quiz();") { (result, error) in
             if error == nil {
-                // exit(0)
                 // success
             } else {
                 exit(1)

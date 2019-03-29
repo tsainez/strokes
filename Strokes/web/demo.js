@@ -1,35 +1,28 @@
 //var animationWriter;
 var quizWriter;
-var character;
+var character = '水';
 var isCharVisible;
 var isOutlineVisible;
 
-
-/* note for the future:
-https://gist.github.com/TommiKivimaki/bc01b5c8b02e531276330d798bff5261
-https://learnappmaking.com/wkwebview-how-to/
-*/
-
-
-function sendOutlineStatus() {
-    var message = { "outlineStatus": quizWriter.showOutline }
-    window.webkit.messageHandlers[.messenger].postMessage(message)
+function changeCharacter(newCharacter) {
+    /*
+    quizWriter = HanziWriter.create('quiz-target', newCharacter, {
+                                    width: 300,
+                                    height: 300,
+                                    showOutline: true,
+                                    showCharacter: false,
+                                    showHintAfterMisses: 1
+                                    });
+     */
+    
+    quizWriter.setCharacter(newCharacter);
+    quizWriter.quiz();
+    window.quizWriter = quizWriter;
 }
 
-/*
-window.setInterval(function(){
-
-                   window.webkit.messageHandlers.updateApplicationState.postMessage(JSON.stringify(window.applicationState))
-                   }, 10)
- */
-
-
 function updateCharacter() {
-    $('#animation-target').html('');
-    $('#quiz-target').html('');
-    
-    var character = $('#character-select').val();
-    $('.char-symbol').text(character);
+    //$('#animation-target').html('');
+    //$('#quiz-target').html('');
     
     /*
     animationWriter = HanziWriter.create('animation-target', character, {
@@ -43,22 +36,20 @@ function updateCharacter() {
     quizWriter = HanziWriter.create('quiz-target', character, {
                                     width: 300,
                                     height: 300,
-                                    showOutline: shouldShowOutline('quiz'),
-                                    showCharacter: false,
+                                    showOutline: true,
+                                    //showOutline: shouldShowOutline('quiz'),
+                                    showCharacter: true,
                                     showHintAfterMisses: 1
                                     });
     quizWriter.quiz();
     
     // for easier debugging
-    // window.animationWriter = animationWriter;
     window.quizWriter = quizWriter;
 }
 
-/*
 function shouldShowOutline(demoType) {
     return $('#' + demoType + '-show-outline').prop('checked');
 }
- */
 
 $(function() {
   updateCharacter();
@@ -68,30 +59,11 @@ $(function() {
                         updateCharacter();
                         });
   
-  $('#animate').on('click', function(evt) {
-                   evt.preventDefault();
-                   animationWriter.animateCharacter();
-                   });
-  
-  /*
-  $('#quiz-reset').on('click', function(evt) {
-                      evt.preventDefault();
-                      quizWriter.quiz();
-                      });
-   */
-  
-  /*
-  $('#animation-show-outline').on('click', function() {
-                                  var method = shouldShowOutline('animation') ? 'showOutline' : 'hideOutline';
-                                  animationWriter[method]();
-                                  });
-   */
-  
+
   /*
   $('#quiz-show-outline').on('click', function() {
                              var method = shouldShowOutline('quiz') ? 'showOutline' : 'hideOutline';
                              quizWriter[method]();
                              });
    */
-  
   });
