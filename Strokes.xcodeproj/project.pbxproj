@@ -29,7 +29,6 @@
 		CB9B221E2125EC8D00BB61FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB9B22212125EC8D00BB61FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB9B22232125EC8D00BB61FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB9B222B2125F18100BB61FF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CBBEEFCC221DE7A10029ECDE /* hanzi-writer.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "hanzi-writer.min.js"; sourceTree = "<group>"; };
 		CBBF2A05221C81F5008B6216 /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		CBC64842225BFC130028DEB3 /* data */ = {isa = PBXFileReference; lastKnownFileType = folder; name = data; path = "../../../Downloads/hanzi-writer-data-2.0.1/data"; sourceTree = "<group>"; };
@@ -63,7 +62,6 @@
 		CB9B220B2125EC8C00BB61FF = {
 			isa = PBXGroup;
 			children = (
-				CB9B222B2125F18100BB61FF /* README.md */,
 				CB9B22162125EC8C00BB61FF /* Strokes */,
 				CB9B22152125EC8C00BB61FF /* Products */,
 				CBCD8699224ACB5300816568 /* Frameworks */,
