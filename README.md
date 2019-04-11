@@ -15,5 +15,8 @@ Taken from the [research essay](https://docs.google.com/document/d/1TwgbuK-8-ppU
 
 This project, at the moment, employs the fourth approach, allowing students full freedom to explore their own educational needs without the weighing down of unnecessary or perhaps obstructive features such as lists of flashcards, which might be unwieldy or unnecessary. Additionally, some users may be only be seeking a quick fulfillment of a temporary curiosity as opposed to using this application as a classroom supplement. 
 
+## Features
+- Search for any Chinese character, traditional or simplified, and practice writing the stroke order of that character.
+
 ## License
 Strokes is released under the MIT license. [See LICENSE](https://github.com/tsainez/strokes/blob/master/LICENSE) for details.
