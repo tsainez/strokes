@@ -24,6 +24,7 @@ class CanvasController: UIViewController, UISearchBarDelegate {
             webView.loadFileURL(url, allowingReadAccessTo: url.deletingLastPathComponent())
             // deletingLastPathComponent() allows WebKit to read from directory of index.html
         }
+        self.hideKeyboard()
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
@@ -69,5 +70,23 @@ class CanvasController: UIViewController, UISearchBarDelegate {
                 exit(1)
             }
         }
+    }
+}
+
+extension UIViewController
+{
+    func hideKeyboard()
+    {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(
+            target: self,
+            action: #selector(UIViewController.dismissKeyboard))
+        
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard()
+    {
+        view.endEditing(true)
     }
 }
