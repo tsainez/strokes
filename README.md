@@ -1,9 +1,5 @@
 # Strokes
-Strokes is a simple iOS application that lets users practice the correct stroke orders for certain Chinese characters. 
-
-This application was created as part of a senior project done at Dr. TJ Owens Gilroy Early College Academy. 
-
-This Github repository hosts all the source code as well as the development process for the product of that project. 
+Strokes is a simple iOS application that lets users practice the correct stroke orders for certain Chinese characters. This application was created as part of a senior project done at Dr. TJ Owens Gilroy Early College Academy.  This Github repository hosts all the source code as well as the development process for the product of that project. 
 
 ## Features
 This application seeks to deliver the utmost utility to the user without sacrificing any aesthetics. 
@@ -20,6 +16,10 @@ This application is a work in progress, and multiple features are planned for de
 - Character completion progress indicators. 
 - Developer information page. 
 - Automatically resets character after completion, instead of waiting for user input to reset, so that characters may be practiced in quick succession. Especially important for low stroke number characters. 
+- Make stroke order data local and allow for usage without WiFi access. *Requires editing licensing.* 
+
+## Credits
+This application is essentially an iOS implementation of the [Hanzi Writer](https://chanind.github.io/hanzi-writer/) project, which originates from [Shaunak Kishore](mailto:kshaunak@gmail.com)'s incredible [Make Me A Hanzi](https://www.skishore.me/makemeahanzi/) project.
 
 ## License
 Strokes is released under the MIT license. [See LICENSE](https://github.com/tsainez/strokes/blob/master/LICENSE) for details.
