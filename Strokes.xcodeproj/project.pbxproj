@@ -15,7 +15,6 @@
 		CB9B22222125EC8D00BB61FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB9B22202125EC8D00BB61FF /* LaunchScreen.storyboard */; };
 		CBBEEFCD221DE7A10029ECDE /* hanzi-writer.min.js in Resources */ = {isa = PBXBuildFile; fileRef = CBBEEFCC221DE7A10029ECDE /* hanzi-writer.min.js */; };
 		CBBF2A06221C81F5008B6216 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = CBBF2A05221C81F5008B6216 /* index.html */; };
-		CBC64843225BFC130028DEB3 /* data in Resources */ = {isa = PBXBuildFile; fileRef = CBC64842225BFC130028DEB3 /* data */; };
 		CBCD869C224AD57000816568 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBCD869A224ACB5300816568 /* WebKit.framework */; };
 		CBE2FA4022209DE200C7E9C9 /* jquery.min.js in Resources */ = {isa = PBXBuildFile; fileRef = CBE2FA3F22209DE200C7E9C9 /* jquery.min.js */; };
 /* End PBXBuildFile section */
@@ -31,7 +30,6 @@
 		CB9B22232125EC8D00BB61FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBBEEFCC221DE7A10029ECDE /* hanzi-writer.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "hanzi-writer.min.js"; sourceTree = "<group>"; };
 		CBBF2A05221C81F5008B6216 /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
-		CBC64842225BFC130028DEB3 /* data */ = {isa = PBXFileReference; lastKnownFileType = folder; name = data; path = "../../../Downloads/hanzi-writer-data-2.0.1/data"; sourceTree = "<group>"; };
 		CBCD869A224ACB5300816568 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		CBE2FA3F22209DE200C7E9C9 /* jquery.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jquery.min.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,7 +77,6 @@
 		CB9B22162125EC8C00BB61FF /* Strokes */ = {
 			isa = PBXGroup;
 			children = (
-				CBC64842225BFC130028DEB3 /* data */,
 				CB337258220371CA001009FE /* web */,
 				CB9B221E2125EC8D00BB61FF /* Assets.xcassets */,
 				CB50566C2214DDAF00EC4EF0 /* CanvasController.swift */,
@@ -164,7 +161,6 @@
 				CBE2FA4022209DE200C7E9C9 /* jquery.min.js in Resources */,
 				CBBEEFCD221DE7A10029ECDE /* hanzi-writer.min.js in Resources */,
 				CB9B221F2125EC8D00BB61FF /* Assets.xcassets in Resources */,
-				CBC64843225BFC130028DEB3 /* data in Resources */,
 				CB9B221D2125EC8C00BB61FF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

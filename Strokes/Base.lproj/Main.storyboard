@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search for a character" translatesAutoresizingMaskIntoConstraints="NO" id="bh0-4r-M4W">
-                                <rect key="frame" x="0.0" y="44" width="375" height="56"/>
+                                <rect key="frame" x="0.0" y="44" width="337" height="56"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="search"/>
                                 <scopeButtonTitles>
                                     <string>Title</string>
@@ -59,17 +59,22 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RYo-dk-eyX">
+                                <rect key="frame" x="337" y="61" width="22" height="22"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="8Kc-IX-9Eq" firstAttribute="centerY" secondItem="EzX-QS-MrA" secondAttribute="centerY" id="5Y4-LV-uLm"/>
                             <constraint firstItem="oA3-en-7OY" firstAttribute="trailing" secondItem="EzX-QS-MrA" secondAttribute="trailing" id="6Fn-CE-qxD"/>
-                            <constraint firstItem="bh0-4r-M4W" firstAttribute="trailing" secondItem="EzX-QS-MrA" secondAttribute="trailing" id="CRr-eI-mMo"/>
+                            <constraint firstItem="RYo-dk-eyX" firstAttribute="leading" secondItem="bh0-4r-M4W" secondAttribute="trailing" id="78V-bz-BRw"/>
+                            <constraint firstItem="RYo-dk-eyX" firstAttribute="top" secondItem="EzX-QS-MrA" secondAttribute="top" constant="17" id="L8B-F0-Oyw"/>
                             <constraint firstItem="oA3-en-7OY" firstAttribute="bottom" secondItem="EzX-QS-MrA" secondAttribute="bottom" id="O4f-iN-uc5"/>
                             <constraint firstItem="oA3-en-7OY" firstAttribute="leading" secondItem="EzX-QS-MrA" secondAttribute="leading" id="jEQ-ft-ybm"/>
                             <constraint firstItem="bh0-4r-M4W" firstAttribute="top" secondItem="EzX-QS-MrA" secondAttribute="top" id="jwX-jX-fRL"/>
                             <constraint firstItem="8Kc-IX-9Eq" firstAttribute="centerX" secondItem="EzX-QS-MrA" secondAttribute="centerX" id="s0U-37-7Hx"/>
                             <constraint firstItem="bh0-4r-M4W" firstAttribute="leading" secondItem="EzX-QS-MrA" secondAttribute="leading" id="t0a-7i-F70"/>
+                            <constraint firstItem="EzX-QS-MrA" firstAttribute="trailing" secondItem="RYo-dk-eyX" secondAttribute="trailing" constant="16" id="xhk-F1-8VX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="EzX-QS-MrA"/>
                     </view>
