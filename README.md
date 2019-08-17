@@ -6,7 +6,7 @@ This application seeks to deliver the utmost utility to the user without sacrifi
 - Search for any Chinese character, traditional or simplified, and practice writing the stroke order of that character.
 
 ##  Design Philosophy
-The essence of this application's design philosophy can be taken from a [research essay](https://docs.google.com/document/d/1TwgbuK-8-ppUrBhht5tVHbNseRh-REsJ3P_DQm03PIM/edit?usp=sharing) I did on Chinese writing systems and the philosophies that Chinese as a foreign language teachers employ: 
+The essence of this application's design philosophy can be taken from a research essay I did on Chinese writing systems and the philosophies that Chinese as a foreign language teachers employ: 
 
 > Some teachers opt to not teach Hanzi whatsoever, believing that “hanzi must be internalized by learners themselves, a task that must be tackled through individual effort and rote memorization.” Instead of teaching students, teachers will assign hanzi as homework. Some teachers may not always have the resources or time to reinforce the concepts during class time, Additionally, it is nearly accepted by all teachers that a “critical mass” of characters must be accumulated before anything may be done with them, so this method encourages acquiring that “critical mass” first and learning and reinforcing patterns later. 
 
