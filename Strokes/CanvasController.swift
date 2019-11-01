@@ -38,7 +38,6 @@ class CanvasController: UIViewController, UISearchBarDelegate {
         }
     }
     
-    // warning, here lies some very bad code
     var outlineStatus = false
     
     @IBAction func toggleOutline(_ sender: Any) {
