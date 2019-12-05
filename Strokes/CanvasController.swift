@@ -13,7 +13,7 @@ import WebKit
 class CanvasController: UIViewController, UISearchBarDelegate {
     
     @IBOutlet weak var webView: WKWebView!
-    @IBOutlet weak var searchBar: UISearchBar! // TODO: Have JavaScript and JQuery communicate with Swift to provide the character.
+    @IBOutlet weak var searchBar: UISearchBar! 
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +25,12 @@ class CanvasController: UIViewController, UISearchBarDelegate {
             // deletingLastPathComponent() allows WebKit to read from directory of index.html
         }
         self.hideKeyboard()
+    }
+    
+    @IBAction func infoButtonPressed(_ sender: UIButton) {
+        let alert = UIAlertController(title: "Instructions", message: "Type in a Chinese character, traditional or simplified, into the searchbar and hit enter to practice writing the stroke order for that character!", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        self.present(alert, animated: true)
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
