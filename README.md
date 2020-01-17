@@ -11,7 +11,7 @@ This application is a work in progress, and multiple features are planned for de
 
 ## Credits
 - [Hanzi Writer](https://chanind.github.io/hanzi-writer/)
-- [Shaunak Kishore](mailto:kshaunak@gmail.com)'s incredible [Make Me A Hanzi](https://www.skishore.me/makemeahanzi/) project
+- [Shaunak Kishore](mailto:kshaunak@gmail.com)'s project "[Make Me A Hanzi](https://www.skishore.me/makemeahanzi/)"
 
 ## License
 Strokes is released under the MIT license. [See LICENSE](https://github.com/tsainez/strokes/blob/master/LICENSE) for details.
