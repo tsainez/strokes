@@ -2,8 +2,8 @@
 //  CanvasController.swift
 //  Strokes
 //
-//  Created by Anthony Sainez on 2/13/19.
-//  Copyright © 2019 Anthony Sainez. All rights reserved.
+//  Created by Anthony Sainez on 13 February 2019.
+//  Copyright © 2020 Anthony Sainez. All rights reserved.
 //
 
 import UIKit
@@ -27,71 +27,24 @@ class CanvasController: UIViewController, UISearchBarDelegate {
         self.hideKeyboard()
     }
     
-    @IBAction func infoButtonPressed(_ sender: UIButton) {
-        let alert = UIAlertController(title: "Instructions", message: "Type in a Chinese character, traditional or simplified, into the searchbar and hit enter to practice writing the stroke order for that character!", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        self.present(alert, animated: true)
-    }
-    
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         searchBar.resignFirstResponder() // hide keyboard
-        let sui = "水" // default character
-        
-        webView.evaluateJavaScript("changeCharacter('\(searchBar.text ?? sui)')") { (result, error) in
+        webView.evaluateJavaScript("changeCharacter('\(searchBar.text ?? "水")')") { (result, error) in
             if error == nil {
-                // success
-            }
-        }
-    }
-    
-    var outlineStatus = false
-    
-    @IBAction func toggleOutline(_ sender: Any) {
-        if outlineStatus == true {
-            webView.evaluateJavaScript("quizWriter.showOutline()") { (result, error) in
-                if error == nil {
-                    // success
-                }
-            }
-            
-            outlineStatus = false
-        } else {
-            webView.evaluateJavaScript("quizWriter.hideOutline()") { (result, error) in
-                if error == nil {
-                    // success
-                }
-            }
-            
-            outlineStatus = true
-        }
-    }
-    
-    
-    @IBAction func resetQuiz(_ sender: Any) {
-        webView.evaluateJavaScript("quizWriter.quiz();") { (result, error) in
-            if error == nil {
-                // success
-            } else {
-                exit(1)
+                // success, do nothing...
             }
         }
     }
 }
 
-extension UIViewController
-{
-    func hideKeyboard()
-    {
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(
-            target: self,
-            action: #selector(UIViewController.dismissKeyboard))
-        
+extension UIViewController {
+    func hideKeyboard() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
         tap.cancelsTouchesInView = false
         view.addGestureRecognizer(tap)
     }
     
-    @objc func dismissKeyboard()
-    {
+    @objc func dismissKeyboard() {
         view.endEditing(true)
     }
 }

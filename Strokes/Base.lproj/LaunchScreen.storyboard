@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,27 +16,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search for a character" translatesAutoresizingMaskIntoConstraints="NO" id="rrN-wW-vTg">
-                                <rect key="frame" x="0.0" y="20" width="375" height="56"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wvf-Pt-JDV">
-                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                            <tabBar autoresizesSubviews="NO" contentMode="scaleToFill" id="eQc-Xl-bjB">
+                                <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Naw-s8-918"/>
-                                    <barButtonItem enabled="NO" title="Outline" id="Q6O-xt-ir6"/>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="77p-o6-IQL"/>
-                                    <barButtonItem enabled="NO" title="Refresh" id="eLm-m4-iyi"/>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="KFW-l3-PjN"/>
+                                    <tabBarItem title="Settings" image="gear" catalog="system" id="AwJ-gE-rji"/>
+                                    <tabBarItem title="Canvas" image="scribble" catalog="system" id="rmi-8N-7Gm"/>
+                                    <tabBarItem title="Flashcards" image="square.on.square" catalog="system" id="KuS-Ow-l46"/>
                                 </items>
-                            </toolbar>
+                            </tabBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="rrN-wW-vTg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LvE-q6-CN1"/>
-                            <constraint firstItem="wvf-Pt-JDV" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ZsC-mF-ZdI"/>
                             <constraint firstItem="rrN-wW-vTg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dm1-im-FuO"/>
-                            <constraint firstItem="wvf-Pt-JDV" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="esZ-y1-yni"/>
-                            <constraint firstItem="wvf-Pt-JDV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iti-8C-PM3"/>
                             <constraint firstItem="rrN-wW-vTg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="lYM-Ac-O5d"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -50,4 +44,9 @@
             <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="gear" catalog="system" width="64" height="58"/>
+        <image name="scribble" catalog="system" width="64" height="54"/>
+        <image name="square.on.square" catalog="system" width="64" height="56"/>
+    </resources>
 </document>
