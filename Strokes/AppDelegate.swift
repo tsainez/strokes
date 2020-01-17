@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  Strokes
 //
-//  Created by Anthony Sainez on 8/16/18.
-//  Copyright © 2018 Anthony Sainez. All rights reserved.
+//  Created by Anthony Sainez on 16 August 2018.
+//  Copyright © 2020 Anthony Sainez. All rights reserved.
 //
 
 import UIKit
