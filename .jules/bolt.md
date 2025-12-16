@@ -1,0 +1,3 @@
+## 2024-05-24 - Over-reliance on Heavy Libraries for Simple Tasks
+**Learning:** This project included the entire jQuery library (30-80KB) solely to use `$(function() { ... })` for document readiness. This is a common anti-pattern in hybrid apps where web views are treated as "quick hacks" rather than performant components.
+**Action:** Always check `package.json` or script tags for libraries that are underutilized. Replace `$(document).ready` with `document.addEventListener('DOMContentLoaded')` to save significant bandwidth and parse time.
