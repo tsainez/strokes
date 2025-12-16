@@ -24,6 +24,12 @@ class CanvasController: UIViewController, UISearchBarDelegate {
             webView.loadFileURL(url, allowingReadAccessTo: url.deletingLastPathComponent())
             // deletingLastPathComponent() allows WebKit to read from directory of index.html
         }
+
+        searchBar.placeholder = "Enter a character (e.g., 水)"
+        searchBar.accessibilityLabel = "Character Search"
+        searchBar.accessibilityHint = "Type a Chinese character to practice its stroke order"
+        webView.accessibilityLabel = "Stroke Order Canvas"
+
         self.hideKeyboard()
     }
     
