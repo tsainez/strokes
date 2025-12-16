@@ -6,6 +6,8 @@
 //  Copyright © 2020 Anthony Sainez. All rights reserved.
 //
 
+var resetTimeout;
+
 function newWriter(character) {
     writer = HanziWriter.create('quiz-target', character, {
                                 width: 300,
@@ -17,25 +19,24 @@ function newWriter(character) {
 }
 
 function changeCharacter(newCharacter) {
+    clearTimeout(resetTimeout);
     writer.setCharacter(newCharacter);
-    writer.quiz();
+    resetWriter();
     window.writer = writer;
 }
 
 function resetWriter() {
     writer.quiz({
                 onComplete: function(summaryData) {
-                resetWriter();
+                resetTimeout = setTimeout(function() {
+                                          resetWriter();
+                                          }, 1000);
                 }
                 });
 }
 
 $(function() {
   newWriter('水');
-  writer.quiz({
-              onComplete: function(summaryData) {
-              resetWriter();
-              }
-              });
+  resetWriter();
   window.writer = writer;
   });
