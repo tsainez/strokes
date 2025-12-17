@@ -25,7 +25,9 @@ function changeCharacter(newCharacter) {
 function resetWriter() {
     writer.quiz({
                 onComplete: function(summaryData) {
-                resetWriter();
+                    setTimeout(function() {
+                        resetWriter();
+                    }, 1000);
                 }
                 });
 }
@@ -34,7 +36,9 @@ $(function() {
   newWriter('水');
   writer.quiz({
               onComplete: function(summaryData) {
-              resetWriter();
+                  setTimeout(function() {
+                      resetWriter();
+                  }, 1000);
               }
               });
   window.writer = writer;
