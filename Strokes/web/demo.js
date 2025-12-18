@@ -30,12 +30,12 @@ function resetWriter() {
                 });
 }
 
-$(function() {
+document.addEventListener('DOMContentLoaded', function() {
   newWriter('水');
   writer.quiz({
-              onComplete: function(summaryData) {
-              resetWriter();
-              }
-              });
-  window.writer = writer;
+    onComplete: function(summaryData) {
+      resetWriter();
+    }
   });
+  window.writer = writer;
+});
