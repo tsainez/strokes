@@ -29,7 +29,18 @@ class CanvasController: UIViewController, UISearchBarDelegate {
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         searchBar.resignFirstResponder() // hide keyboard
-        webView.evaluateJavaScript("changeCharacter('\(searchBar.text ?? "水")')") { (result, error) in
+
+        // Securely serialize input to prevent JavaScript injection
+        let text = searchBar.text ?? "水"
+        guard let data = try? JSONSerialization.data(withJSONObject: [text], options: []),
+              let jsonString = String(data: data, encoding: .utf8) else {
+            return
+        }
+
+        // jsonString is ["escaped_text"]. Strip brackets to get "escaped_text"
+        let escapedArg = String(jsonString.dropFirst().dropLast())
+
+        webView.evaluateJavaScript("changeCharacter(\(escapedArg))") { (result, error) in
             if error == nil {
                 // success, do nothing...
             }
